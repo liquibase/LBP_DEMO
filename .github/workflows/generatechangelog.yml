@@ -40,9 +40,9 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
     - name: Liquibase GenerateChangelog
-      uses: liquibase-github-actions/generate-changelog@v4.19.0
+      uses: liquibase-github-actions/generate-changelog@62c28878b0c0b850800cdd4ae12668371a4ef906 # v4.19.0
       with:
         username: ${{secrets.LIQUIBASE_COMMAND_USERNAME}}
         password: ${{secrets.LIQUIBASE_COMMAND_PASSWORD}}
